@@ -1,0 +1,45 @@
+[
+  {
+  "Id":1,
+  "name":"Birla House",
+  "Type":"House",
+  "price":120000
+  },
+  {
+    "Id":2,
+    "name":"Bani House",
+    "Type":"House",
+    "price":130000
+    },
+    {
+      "Id":3,
+      "name":"Tata House",
+      "Type":"House",
+      "price":160000
+      },
+      {
+        "Id":4,
+        "name":"Rai House",
+        "Type":"House",
+        "price":170000
+        },
+        {
+          "Id":5,
+          "name":"Rank Villa",
+          "Type":"Villa",
+          "price":170000
+          },
+          {
+            "Id":5,
+            "name":"Raj palace",
+            "Type":"Palacee",
+            "price":200000
+            },
+            {
+              "Id":4,
+              "name":"Surya palace",
+              "Type":"Palace",
+              "price":190000
+              }
+
+]
