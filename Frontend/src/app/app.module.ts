@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import{HttpClientModule}from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,7 +9,7 @@ import { PropertyListComponent } from './Property/property-list/property-list.co
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     PropertyCardComponent,
     PropertyListComponent,
@@ -16,6 +17,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
    ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

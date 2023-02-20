@@ -1,7 +1,18 @@
 
     <div class="card">
-     <img class="propImg" src="assets/images/house-default.jpg">
-       <div class="card-body p1">
+      <div class="card-img-wrapper">
+        <img class="card-img-top" src="assets/images/house-default.jpg">
+        <ul class="list-inline text-center member-icon animate">
+          <li class="list-inline-item">
+            <button class="btn btn-primary"><i class="fa-sharp fa-solid fa-pen"></i></button>
+          </li>
+          <li class="list-inline-item">
+            <button class="btn btn-primary"><i class="fa-light fa-address-book"></i></button>
+          </li>
+        </ul>
+      </div>
+
+       <div class="card-body p-2">
             <h1>{{property.name}}</h1>
             <h1>{{property.Type}}</h1>
             <h1>{{property.price}}</h1>
