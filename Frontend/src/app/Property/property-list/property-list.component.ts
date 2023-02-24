@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { HousingService } from 'src/app/services/housing.service';
+import {Iproperty} from 'src/app/Property/Iproperty.interface.ts';
 
 @Component({
   selector: 'app-property-list',
@@ -9,7 +10,7 @@ import { HousingService } from 'src/app/services/housing.service';
 })
 export class PropertyListComponent implements OnInit  {
 
-  properties:any
+  properties: Array<Iproperty>=[];
     constructor(private husingsrv:HousingService){
 
     }
@@ -20,10 +21,10 @@ export class PropertyListComponent implements OnInit  {
         {
           console.log(data);
           this.properties=data;
-         }//, error =>
-        // {
-        //   console.log(''error'');
-        // }
+         },error =>{
+          console.log('httperror');
+          console.log(error);
+         }
         );
 
 
